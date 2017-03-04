@@ -1,16 +1,38 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+      <transition name="router-fade" mode="out-in">
+          <router-view></router-view>
+      </transition>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+      return {
+          transitionName: 'slide-left'
+      }
+  },
+  watch: {
+    /*'$route' (to, from) {
+      const toDepth = to.path.split('/').length
+      const fromDepth = from.path.split('/').length
+      this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+    }*/
+   }
 }
 </script>
 
 <style lang="less">
+body{height: 100%}
+section{height:400px}
+.router-fade-enter-active, .router-fade-leave-active {
+	  	transition: opacity .3s;
+	}
+	.router-fade-enter, .router-fade-leave-active {
+	  	opacity: 0;
+	}
 @import '~vux/src/styles/reset.less';
 @font-face {
   font-family: 'iconfont';  /* project id 243181 */

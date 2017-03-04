@@ -5,8 +5,8 @@
     </section>
 </template>
 
-<style>
-
+<style scoped>
+    section{background: yellow}
 </style>
 
 <script>

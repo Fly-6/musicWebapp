@@ -5,8 +5,8 @@
     </section>
 </template>
 
-<style lang="less" secoped>
-
+<style lang="less" scoped>
+    section{background: red}
 </style>
 
 <script>
