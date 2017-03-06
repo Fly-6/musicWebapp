@@ -1,5 +1,6 @@
-# vux2-project
 
+# vux2-project
+仿网易云音乐
 > A Vue.js project
 
 ## Build Setup
