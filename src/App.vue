@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <transition name="router-fade" mode="out-in">
+      <transition name="slide-left" mode="out-in">
           <router-view></router-view>
       </transition>
   </div>
@@ -27,15 +27,22 @@ export default {
 </script>
 
 <style lang="less">
-body{height: 100%}
-section{height:400px}
-.router-fade-enter-active, .router-fade-leave-active {
+    body{height: 100%}
+    section{height:400px}
+    /*.router-fade-enter-active, .router-fade-leave-active {
 	  	transition: opacity .3s;
 	}
 	.router-fade-enter, .router-fade-leave-active {
 	  	opacity: 0;
-	}
-@import '~vux/src/styles/reset.less';
-@import './assets/css/iconfont.css';
-@import './assets/css/resset.css';
+	}*/
+/*.slide-left-enter-active, .slide-left-leave-active {
+        transition: transform .5s;
+        transform-origin: left;
+    }
+    .slide-left-enter, .slide-left-leave-active {
+        transform: scale(0,1);
+    }*/
+    @import '~vux/src/styles/reset.less';
+    @import './assets/css/iconfont.css';
+    @import './assets/css/resset.css';
 </style>

@@ -34,7 +34,7 @@
             color:#fff; width: 25%; text-align: center;
         }
         i{
-            font-family: 'iconfont'; font-size: 24px; width: 100%; display: inline-block; height: 50%; font-style: normal; margin: 4px 0
+            font-family: 'iconfont'; font-size: 24px; width: 100%; display: inline-block; height: 20px; font-style: normal; margin: 4px 0; line-height: 24px
         }
         span{
             font-size: 12px
